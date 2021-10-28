@@ -9,9 +9,9 @@ const b = parseInt(prompt("Inserisci il secondo numero."));
 const element = document.getElementById("risultato");
 
 if (a > b) {
-    element.innerHTML =`Il numero maggiore è ${a}`;
+    element.innerHTML =`Il numero maggiore &egrave; ${a}`;
     console.log("il numero maggiore è", a);
 } else {
-    element.innerHTML = `Il numero maggiore è ${b}`;
+    element.innerHTML = `Il numero maggiore &egrave; ${b}`;
     console.log("il numero maggiore è", b);
 }
