@@ -23,5 +23,5 @@ if (a.length > b.length) {
 const element = document.getElementById("risultato");
 element.innerHTML = `
 La parola pi&ugrave; corta &egrave; ${corta}. <br>
-La parola pi&ugrave; lunga &egrave; ${lunga}.`
+La parola pi&ugrave; lunga &egrave; ${lunga}.`;
 console.log(corta, lunga);
