@@ -10,8 +10,11 @@ console.log(b);
 // verifico quale sia la parola più lunga
 let corta = "";
 let lunga = "";
+let uguali = false;
 
-if (a.length > b.length) {
+if (a.length === b.length) {
+    uguali = true;
+} else if (a.length > b.length) {
     corta = b;
     lunga = a;
 } else {
@@ -21,7 +24,14 @@ if (a.length > b.length) {
 
 // stampo il risultato
 const element = document.getElementById("risultato");
-element.innerHTML = `
-La parola pi&ugrave; corta &egrave; ${corta}. <br>
-La parola pi&ugrave; lunga &egrave; ${lunga}.`;
-console.log(corta, lunga);
+
+if (uguali === true) {
+    element.innerHTML = `Le parole hanno la stessa lunghezza: ${a} ${b}`;
+    console.log(corta, lunga);
+} else {
+    element.innerHTML = `
+    La parola pi&ugrave; corta &egrave; ${corta}. <br>
+    La parola pi&ugrave; lunga &egrave; ${lunga}.`;
+    console.log(corta, lunga);
+}
+   
