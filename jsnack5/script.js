@@ -13,7 +13,6 @@ for (let i = 0; i < 6; i++) {
     if (numero % 2 === 1) {
         lista.push(numero);
     }
-    
 }
 
 console.log(lista);
